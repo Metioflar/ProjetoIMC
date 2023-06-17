@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Prompt&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+:root{
+  --fonte-principal:"Poppins";
+  --fonte-secundaria:"Prompt";
+  --cor-fundo: rgb(248, 248, 253);
+  --cor-botao: blue;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-fundo);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-column: auto;
+  justify-content: center;
+  height: 500px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 30px;
+}
+label{
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--fonte-principal);
+}
+input{
+  display: flex;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  width: 200px;
+  height: 30px;
+  border-radius: 2vw;
+  margin-bottom: 10px;
+}
+h1{
+  padding: 0;
+  margin: 0;
+  font-family: var(--fonte-secundaria);
+}
+button[type='submit']{
+color: aliceblue;
+background-color: black;
+height: 40px;
+width: 200px;
+border-radius: 20px;
+font-size: 20px;
+margin-top: 40px;
+}
+button:hover{
+  color: rgb(0, 149, 255);
+  background-color: black;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.espaco{
+  height: 100px;
+}
+.container2{
+  border-radius: 20px;
+  background-color: aliceblue;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+} 
